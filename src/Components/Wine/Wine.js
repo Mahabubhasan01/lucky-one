@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Wine.css'
 // import {BsGithub} from 'react-icons/fa'
 
@@ -18,7 +20,7 @@ const Wine = ({handleCart,wine}) => {
                 <h6>Category : {category}</h6>
             </div>
             <button onClick={()=>handleCart(wine)} className='btn'>
-                <h6>Add To Cart</h6>
+                <h4>Add To Cart<FontAwesomeIcon className='icn' icon={faShoppingCart}></FontAwesomeIcon></h4>
             </button>
         </div>
     );
