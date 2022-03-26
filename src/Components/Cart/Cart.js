@@ -6,25 +6,26 @@ import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
 
-const Cart = (props) => {
-    const {name,img,price} =props.cart
-    // console.log(props.cart[1].name)
+const Cart = ({cart}) => {
     
-    // const {img,price}=props.wine
+    const {img,name}=cart
+
     return (
 
             <div className='side-box'>
+              
+                <h1></h1>
                 
                 <h2>Your Selected Wines</h2>
-            <h2>Name:</h2>
-            
-            
-            
-                   <div className='two-button'> 
-                   <p><button className='one'>Select one
-                   </button></p>
-                    <p><button className='two'>Delete all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
-                   </div>
+                <div className='add-info'>
+                    <p ><img src={img} alt="" /></p>
+                    <p>{name}</p>
+                    <p><FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></p>
+                    
+                    
+
+                </div>
+                   
             </div>
     );
 };

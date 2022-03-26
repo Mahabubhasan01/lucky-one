@@ -31,3 +31,12 @@
 .two-button{
     display: block;
 }
+.add-info{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+p img{
+    width: 60px;
+}

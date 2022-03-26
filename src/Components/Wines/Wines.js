@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../Cart/Cart';
 import Wine from '../Wine/Wine';
 import './Wines.css'
 
 const Wines = () => {
     const [wines,setWines] = useState([]);
-    const [cart,setCart] = useState([])
+    const [carts,setCart] = useState([])
     
 
     useEffect(() => {
@@ -20,8 +22,9 @@ const Wines = () => {
     const handleCart = (wine) =>{
         // Cart(wine)
         // console.log(wine)
-        const newCart = [...cart,wine];
+        const newCart = [...carts,wine];
         setCart(newCart)
+        // console.log(wine)
     }
 
     return (
@@ -32,7 +35,9 @@ const Wines = () => {
             <div className="wines">
                 
             {
-                 wines.map(wine=><Wine
+                 wines.map(wine=>
+                    
+                 <Wine
                  key={wine.id}
                  wine={wine}
                  handleCart={handleCart}
@@ -41,8 +46,17 @@ const Wines = () => {
              }
             </div>
              <div className='wines-info'>
-                 <h1>{cart.length}</h1>
-             <Cart cart={cart}></Cart>
+                {
+                    carts.map(cart=><Cart
+                    cart={cart}
+                    key={cart.id}
+                    ></Cart>)
+                }
+                <div className='two-button'> 
+                   <p><button className='one'>Select one
+                   </button></p>
+                    <p><button className='two'>Delete all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
+                   </div>
              </div>
              
          </div>
