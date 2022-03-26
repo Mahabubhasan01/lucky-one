@@ -7,7 +7,8 @@ import './Wines.css'
 
 const Wines = () => {
     const [wines,setWines] = useState([]);
-    const [carts,setCart] = useState([])
+    const [carts,setCarts] = useState([])
+    
     
 
     useEffect(() => {
@@ -23,9 +24,10 @@ const Wines = () => {
         // Cart(wine)
         // console.log(wine)
         const newCart = [...carts,wine];
-        setCart(newCart)
+        setCarts(newCart)
         // console.log(wine)
     }
+    
 
     return (
         <div>
@@ -46,6 +48,7 @@ const Wines = () => {
              }
             </div>
              <div className='wines-info'>
+             <h2>Your Selected Wines</h2>
                 {
                     carts.map(cart=><Cart
                     cart={cart}
@@ -53,9 +56,8 @@ const Wines = () => {
                     ></Cart>)
                 }
                 <div className='two-button'> 
-                   <p><button className='one'>Select one
-                   </button></p>
-                    <p><button className='two'>Delete all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
+                   <p><button className='one'>Select one</button></p>
+                    <p><button  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
              

@@ -30,6 +30,32 @@
     background-color:rgba(0, 255, 255, 0.123);
     
 }
+.one{
+    height: 35px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color:aquamarine;
+    font-weight:800;
+    color: rgb(29, 24, 24);
+    border: none;
+    cursor: pointer;
+
+}
+.two{
+    height: 35px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color:darkred;
+    font-weight:600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.two-button{
+    display: block;
+}
 @media only screen and (max-width: 600px) {
     .wines-info{
         display: none;

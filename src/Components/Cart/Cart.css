@@ -5,32 +5,7 @@
     align-items: center;
 }
 
-.one{
-    height: 35px;
-    width: 80%;
-    margin: 5px;
-    border-radius: 5px;
-    background-color:aquamarine;
-    font-weight:800;
-    color: rgb(29, 24, 24);
-    border: none;
-    cursor: pointer;
 
-}
-.two{
-    height: 35px;
-    width: 80%;
-    margin: 5px;
-    border-radius: 5px;
-    background-color:darkred;
-    font-weight:800;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.two-button{
-    display: block;
-}
 .add-info{
     padding: 10px;
     display: flex;
@@ -38,5 +13,7 @@
     align-items:center;
 }
 p img{
+    border-radius: 60%;
+    background-color:white;
     width: 60px;
 }
