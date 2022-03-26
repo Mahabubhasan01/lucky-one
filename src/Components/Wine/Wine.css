@@ -1,0 +1,25 @@
+.wine{
+    width: 300px;
+    height: 510px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    position: relative;
+}
+.wine img{
+    height: 240px;
+    width: 280px;
+    margin: 9px;
+}
+.btn{
+    height: 35px;
+    width: 100%;
+    background-color: #a491a8;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
