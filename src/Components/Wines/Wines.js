@@ -23,7 +23,7 @@ const Wines = () => {
         setCarts(newCart)
         // console.log(wine)
     }
-    const all =()=>{
+    const allReset =()=>{
         const newCart =[]
         setCarts(newCart)
         //  console.log(wines.length)
@@ -66,7 +66,7 @@ const Wines = () => {
                 }
                 <div className='two-button'> 
                    <p><button onClick={()=>choseRandom(wines.length)} className='one'>Select one</button></p>
-                    <p><button  onClick={()=>all()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
+                    <p><button  onClick={()=>allReset()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
              
