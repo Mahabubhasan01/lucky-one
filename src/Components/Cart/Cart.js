@@ -4,6 +4,11 @@ const Cart = (props) => {
     // const {img,price}=props.wine
     return (
         <div>
+            <h2>Your selected items here</h2>
+            <h2>Price</h2>
+            <h2>Price</h2>
+            <h2>Price</h2>
+            <h2>Price</h2>
             <h2>Price</h2>
         </div>
     );

@@ -1,0 +1,25 @@
+.header{
+    height: 60px;
+    width: 100%;
+    background-color:rgb(98, 199, 199);
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 40px;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 9px;
+    font-weight:700;
+    color:black;
+}
+nav a:hover{
+    border-bottom: 2px solid antiquewhite;
+}
+.logo{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    cursor: pointer;
+}

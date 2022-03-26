@@ -7,23 +7,31 @@ const Wines = () => {
     const [wines,setWines] = useState([])
 
     useEffect(() => {
-        fetch('tree.json').then(res=>res.json()).then(data=>setWines(data))
+        fetch('product.json')
+        .then(res=>res.json())
+        .then(data=>setWines(data))
+        
     },[])
     return (
-        <div className='wines-body'>
-           <div className="wines">
-           {
-                wines.map(wine=><Wine
-                key={wine.id}
-                wine={wine}
-                ></Wine>)
-            }
-           </div>
-            <div className='wines-info'>
+        <div>
+            <h2>Wines Galery</h2>
+            <div className='wines-body'>
             
-            <Cart cart={Cart}></Cart>
+            <div className="wines">
+                
+            {
+                 wines.map(wine=><Wine
+                 key={wine.id}
+                 wine={wine}
+                 
+                 ></Wine>)
+             }
             </div>
-            
+             <div className='wines-info'>
+             <Cart cart={Cart}></Cart>
+             </div>
+             
+         </div>
         </div>
         
     );

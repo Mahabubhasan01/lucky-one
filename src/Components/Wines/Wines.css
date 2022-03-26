@@ -18,7 +18,7 @@
     margin: 100px 50px;
 }
 .wines-info{
-    background-color:darkgrey;
+    background-color:rgba(0, 255, 255, 0.123);
     position: sticky;
     top: 0;
     
