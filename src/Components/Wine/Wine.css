@@ -1,6 +1,6 @@
 .wine{
     width: 300px;
-    height: 500px;
+    height: 400px;
     border-radius: 8px;
     
     position: relative;
@@ -8,11 +8,14 @@
 
 }
 .wine img{
-    height: 240px;
+    height: 200px;
     width: 280px;
     margin: 9px;
 }
+
 .btn{
+    display: flex;
+    justify-content: center;
     height: 35px;
     width: 100%;
     background-color:rgba(0, 255, 255, 0.418);
@@ -24,6 +27,9 @@
     display: flex;
     align-items: center;
     justify-content:center;
+}
+.btn p{
+    margin-right: 8px;
 }
 .btn:hover{
     background-color:aqua;

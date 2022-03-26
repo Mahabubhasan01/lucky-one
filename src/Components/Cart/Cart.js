@@ -1,15 +1,18 @@
 import React from 'react';
+// import {FaGithub} from 'react-icons-fa'
+import './Cart.css'
 
-const Cart = (props) => {
+
+const Cart = () => {
     // const {img,price}=props.wine
     return (
-        <div>
+        <div className='cart'>
             <h2>Your selected items here</h2>
-            <h2>Price</h2>
-            <h2>Price</h2>
-            <h2>Price</h2>
-            <h2>Price</h2>
-            <h2>Price</h2>
+            <div>
+                <img src="" alt="" />
+                {/* <p><FaGithub></FaGithub></p> */}
+                <p></p>
+            </div>
         </div>
     );
 };

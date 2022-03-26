@@ -2,6 +2,9 @@
     height: 60px;
     width: 100%;
     background-color:rgb(98, 199, 199);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .header-box{
     display: flex;
@@ -22,4 +25,22 @@ nav a:hover{
 .logo{
     font-family:Comic Sans MS, Comic Sans, cursive;
     cursor: pointer;
+}
+.category{
+    display: none;
+
+    height: 400px;
+    width: 200px;
+    background-color:aquamarine;
+    border-radius: 20px;
+    
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+.category:hover .category{
+    display: block;
 }
