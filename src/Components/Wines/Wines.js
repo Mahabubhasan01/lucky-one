@@ -26,6 +26,15 @@ const Wines = () => {
     const all =()=>{
         const newCart =[]
         setCarts(newCart)
+        //  console.log(wines.length)
+    }
+    /* const choseRandom = (carts) =>{
+        console.log(carts)
+    } */
+    const choseRandom=(num)=>{
+        const randomNumber = Math.floor(Math.random() * num) + 1;
+        console.log(randomNumber)
+
     }
     
 
@@ -56,7 +65,7 @@ const Wines = () => {
                     ></Cart>)
                 }
                 <div className='two-button'> 
-                   <p><button className='one'>Select one</button></p>
+                   <p><button onClick={()=>choseRandom(wines.length)} className='one'>Select one</button></p>
                     <p><button  onClick={()=>all()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
