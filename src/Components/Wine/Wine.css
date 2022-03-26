@@ -8,10 +8,15 @@
 
 }
 .wine img{
+    
     height: 200px;
     width: 280px;
     margin: 9px;
 }
+/* .img{
+    border-radius: 5px;
+    background-color:rgba(128, 128, 128, 0.247);
+} */
 
 .btn{
     display: flex;

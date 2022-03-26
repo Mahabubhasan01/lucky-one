@@ -5,6 +5,8 @@ import './Wines.css'
 
 const Wines = () => {
     const [wines,setWines] = useState([]);
+    const [cart,setCart] = useState([])
+    
 
     useEffect(() => {
         fetch('product.json')
@@ -13,22 +15,13 @@ const Wines = () => {
         
     },[])
 
-    const handleCart = (selectedProduct) => {
-        // console.log(product)
-        let newCart=[]
-        const exist = wines.find(product=>product.id===selectedProduct.id);
-        if(!exist){
-            selectedProduct.quantity=1;
-            newCart = [...wines,selectedProduct]
-        }
-        else{
-            const rest = wines.filter(product=>product.id!==selectedProduct.id);
-            exist.quantity=exist.quantity+1
-            newCart=[...rest,exist];
-        }
-        setWines(newCart)
-        // addToDb(selectedProduct.id)
-            
+    
+    
+    const handleCart = (wine) =>{
+        // Cart(wine)
+        // console.log(wine)
+        const newCart = [...cart,wine];
+        setCart(newCart)
     }
 
     return (
@@ -48,7 +41,8 @@ const Wines = () => {
              }
             </div>
              <div className='wines-info'>
-             <Cart cart={Cart}></Cart>
+                 <h1>{cart.length}</h1>
+             <Cart cart={cart}></Cart>
              </div>
              
          </div>

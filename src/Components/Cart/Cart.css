@@ -1,3 +1,33 @@
-.cart{
-    position:sticky;
+
+.side-box{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    height: 35px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color:aquamarine;
+    font-weight:800;
+    color: rgb(29, 24, 24);
+    border: none;
+    cursor: pointer;
+
+}
+.two{
+    height: 35px;
+    width: 80%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color:darkred;
+    font-weight:800;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.two-button{
+    display: block;
 }

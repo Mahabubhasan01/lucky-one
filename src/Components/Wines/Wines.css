@@ -16,12 +16,14 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 45px;
-    margin: 100px 50px;
+    margin: 90px 10px;
+    padding: 20px;
 }
 .wines-info{
+    height: 800px;
+    border: none;
+    border-radius: 10px;
     background-color:rgba(0, 255, 255, 0.123);
-    position: sticky;
-    top: 0;
     
 }
 @media only screen and (max-width: 600px) {
