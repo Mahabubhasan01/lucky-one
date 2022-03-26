@@ -17,21 +17,21 @@ const Wines = () => {
         .then(data=>setWines(data))
         
     },[])
-
-    
     
     const handleCart = (wine) =>{
-        // Cart(wine)
-        // console.log(wine)
         const newCart = [...carts,wine];
         setCarts(newCart)
         // console.log(wine)
+    }
+    const all =()=>{
+        const newCart =[]
+        setCarts(newCart)
     }
     
 
     return (
         <div>
-            <h2>Wines Galery</h2>
+            <h2>Wines Gallery</h2>
             <div className='wines-body'>
             
             <div className="wines">
@@ -57,7 +57,7 @@ const Wines = () => {
                 }
                 <div className='two-button'> 
                    <p><button className='one'>Select one</button></p>
-                    <p><button  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
+                    <p><button  onClick={()=>all()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
              
