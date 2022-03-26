@@ -31,9 +31,11 @@ const Wines = () => {
     /* const choseRandom = (carts) =>{
         console.log(carts)
     } */
-    const choseRandom=(num)=>{
+    const choseRandom=(num,wines)=>{
+        let length = [1,2,3,4,5,6,7,8,9,10,11,12]
         const randomNumber = Math.floor(Math.random() * num) + 1;
-        console.log(randomNumber)
+        if(randomNumber)
+        console.log('ok')
 
     }
     
@@ -64,8 +66,14 @@ const Wines = () => {
                     key={cart.id}
                     ></Cart>)
                 }
+                {
+                    /* wines.map(cart=><Select 
+                        cart={cart}
+                        key={cart.id}
+                    ></Select>) */
+                }
                 <div className='two-button'> 
-                   <p><button onClick={()=>choseRandom(wines.length)} className='one'>Select one</button></p>
+                <p><button onClick={()=>choseRandom(wines.length,wines)} className='one'>Select one</button></p>
                     <p><button  onClick={()=>allReset()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
