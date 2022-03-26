@@ -31,11 +31,11 @@ const Wines = () => {
     /* const choseRandom = (carts) =>{
         console.log(carts)
     } */
-    const choseRandom=(num,wines)=>{
-        let length = [1,2,3,4,5,6,7,8,9,10,11,12]
+    const choseRandom=(num)=>{
         const randomNumber = Math.floor(Math.random() * num) + 1;
+        const random = Math.floor(Math.random() * num) + 1;
         if(randomNumber)
-        console.log('ok')
+            alert('Wow Hurray your favorite item s '+ random)
 
     }
     
@@ -43,6 +43,7 @@ const Wines = () => {
     return (
         <div>
             <h2>Wines Gallery</h2>
+            <h2>Find your favorite wine here</h2>
             <div className='wines-body'>
             
             <div className="wines">
@@ -73,7 +74,7 @@ const Wines = () => {
                     ></Select>) */
                 }
                 <div className='two-button'> 
-                <p><button onClick={()=>choseRandom(wines.length,wines)} className='one'>Select one</button></p>
+                <p><button onClick={()=>choseRandom(wines.length)} className='one'>Select one</button></p>
                     <p><button  onClick={()=>allReset()}  className='two'>Reset all<FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button></p>
                    </div>
              </div>
